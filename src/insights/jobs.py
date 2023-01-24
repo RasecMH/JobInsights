@@ -56,4 +56,4 @@ def filter_by_job_type(jobs: List[Dict], job_type: str) -> List[Dict]:
     list
         List of jobs with provided job_type
     """
-    raise NotImplementedError
+    return [item for item in jobs if item["job_type"] == job_type]
