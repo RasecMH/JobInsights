@@ -92,6 +92,6 @@ def sort_by(jobs: List[Dict], criteria: str) -> None:
     except KeyError:
         raise ValueError(f"invalid sorting criteria: {criteria}")
 
-    reverse = criteria in ["max_salary", "date_posted"]
+    reverse = criteria in {"max_salary", "date_posted"}
 
     jobs.sort(key=key, reverse=reverse)

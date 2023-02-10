@@ -96,7 +96,7 @@ def filter_by_salary_range(
     list
         Jobs whose salary range contains `salary`
     """
-    jobs_filter = list()
+    jobs_filter = []
 
     for item in jobs:
         try:
